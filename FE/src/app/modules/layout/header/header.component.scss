@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+
+  mat-toolbar-row {
+    display:flex;
+    justify-content: space-between;
+    background-color: #111213;
+  }
+  a{
+    padding: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    color: white;
+  }
+}

@@ -1,0 +1,14 @@
+@import 'src/styles/constants';
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: hidden;
+    padding: $content-padding;
+  }
+}

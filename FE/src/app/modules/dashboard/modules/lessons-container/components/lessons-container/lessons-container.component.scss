@@ -1,0 +1,8 @@
+@import 'src/styles/colors';
+@import 'src/styles/constants';
+
+:host{
+  border: $border-width solid $color-gainsboro;
+  border-radius: $border-radius;
+  padding: $content-padding;
+}

@@ -1,0 +1,13 @@
+@import 'src/styles/colors';
+
+div{ 
+  text-align: center;  
+  background: linear-gradient( $color-futured-lesson-background-1, $color-futured-lesson-background-2);
+}
+img{
+  width:70px;
+  height:70px;
+}
+button{
+  border-radius:50%;
+}
