@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lessons-header',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lessons-header.component.scss']
 })
 export class LessonsHeaderComponent implements OnInit {
-
+  @Input() progress: number; 
+  @Input() grade: number;
+  
   constructor() { }
 
   ngOnInit(): void {

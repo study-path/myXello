@@ -1,0 +1,50 @@
+@import 'src/styles/colors';
+
+.uploader-progress{
+  display:flex;
+  position: relative;
+  ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: $color-spinner-yellow-green;
+  }
+}
+
+.progress{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+.flag{
+  display: flex;
+    flex-direction: column;   
+    align-items: center;
+    padding-top: 10px;
+    background-color: $color-flag-ce-soir;
+    width:65px;
+    height:75px;
+    margin-top: -11px;
+}
+.grade{
+    font-size: 16px;
+    color: white;    
+}
+.numberOfGrade{
+  color: white;   
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+.triangle-up {
+	width: 0;
+	height: 49px;
+	border-left: 32px solid transparent;
+	border-right: 32px solid transparent;
+	border-bottom: 26px solid white;
+}
+
+h1{
+  font-weight: bold;
+}

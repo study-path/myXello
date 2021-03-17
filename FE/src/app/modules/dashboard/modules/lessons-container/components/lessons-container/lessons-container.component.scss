@@ -5,4 +5,18 @@
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
   padding: $content-padding;
+
+   
+  .footer{
+    border-top: $border-width solid $color-gainsboro;
+    background-color: $color-gainsboro;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: -$content-padding;
+    margin-right: -$content-padding;
+    margin-bottom: -$content-padding;
+    cursor: pointer;
+  }
 }

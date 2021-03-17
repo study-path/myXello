@@ -2,12 +2,24 @@
 
 div{ 
   text-align: center;  
-  background: linear-gradient( $color-futured-lesson-background-1, $color-futured-lesson-background-2);
+  background: linear-gradient( to right, $color-futured-lesson-background-1, $color-futured-lesson-background-2);
+  border-radius: 5px;
+  margin:10px 0;
+  padding:30px;
 }
 img{
   width:70px;
-  height:70px;
+  height:70px; 
 }
 button{
-  border-radius:50%;
+  border-radius: 21px;
+    background-color: #047baf;
+    color: white;
+    height: 40px;
+    width: 121px;
+    font-size: 15px;
+}
+
+h2{
+  font-weight: bold;
 }

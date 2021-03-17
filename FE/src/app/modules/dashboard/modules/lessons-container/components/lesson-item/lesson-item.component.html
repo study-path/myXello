@@ -1,1 +1,9 @@
-<p>lesson-item works!</p>
+<div fxFlex fxLayoutAlign="space-between center">
+  <div fxFlex fxLayoutAlign="start center">
+    <img class="lesson-icon" src="{{iconName}}" />
+    <p class='uncomplited-lesson' [ngClass]="{'uncomplited-lesson' : !isLessonCompleted}">
+      {{lessonName}}
+    </p>
+  </div>
+  <span class="material-icons icon-green" *ngIf="isLessonCompleted"> check_circle_outline </span>
+</div>

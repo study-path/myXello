@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lesson-item',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson-item.component.scss']
 })
 export class LessonItemComponent implements OnInit {
-
+  @Input() isLessonCompleted: boolean;
+  @Input() lessonName: string;
+  @Input() iconName: string;
   constructor() { }
 
   ngOnInit(): void {

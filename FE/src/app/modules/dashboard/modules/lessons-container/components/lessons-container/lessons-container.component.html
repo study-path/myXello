@@ -1,3 +1,7 @@
-<app-lessons-header></app-lessons-header>
+<app-lessons-header progress="40" grade="10"></app-lessons-header>
 <app-featured-lesson></app-featured-lesson>
-<app-lesson-item *ngFor="let lesson of lessons"></app-lesson-item>
+<app-lesson-item *ngFor="let lesson of getLessons()" [lessonName]="lesson.name" [iconName]="lesson.iconName"
+  [isLessonCompleted]="lesson.isLessonCompleted">
+</app-lesson-item>
+
+<div class="footer" *ngIf="!isAllLessonsClicked" (click)="viewAllLessonsClick()">View All Lessons</div>
