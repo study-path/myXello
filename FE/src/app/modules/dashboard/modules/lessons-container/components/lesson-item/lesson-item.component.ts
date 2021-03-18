@@ -9,6 +9,7 @@ export class LessonItemComponent implements OnInit {
   @Input() isLessonCompleted: boolean;
   @Input() lessonName: string;
   @Input() iconName: string;
+
   constructor() { }
 
   ngOnInit(): void {

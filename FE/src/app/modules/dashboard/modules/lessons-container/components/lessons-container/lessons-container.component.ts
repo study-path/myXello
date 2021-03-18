@@ -11,7 +11,7 @@ export class LessonsContainerComponent implements OnInit {
   isAllLessonsClicked = false;
   lessons = [
     {
-      name:'lesson 1',
+      name:'lesson 1111111111111111 1111111111111111111111111 1111111111111111111 1111111111111111111111111111 11111111111111111111111111111111 1111111111111111111 1111111111111111',
       isLessonCompleted: true,
       iconName:'/assets/img/univer.jpg',
       isLessonCore:true

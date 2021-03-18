@@ -1,9 +1,11 @@
-<div fxFlex fxLayoutAlign="space-between center">
-  <div fxFlex fxLayoutAlign="start center">
+<div fxLayout="row" fxLayoutAlign="start center" style="width: 100%">
+  <div fxLayout="row" fxFlex fxLayoutAlign="start center">
     <img class="lesson-icon" src="{{iconName}}" />
-    <p class='uncomplited-lesson' [ngClass]="{'uncomplited-lesson' : !isLessonCompleted}">
+    <span [ngClass]="{'uncomplited-lesson' : !isLessonCompleted}">
       {{lessonName}}
-    </p>
+    </span>
   </div>
-  <span class="material-icons icon-green" *ngIf="isLessonCompleted"> check_circle_outline </span>
+  <div fxFlex="40px">
+    <span class="material-icons icon-green" *ngIf="isLessonCompleted">check_circle_outline</span>
+  </div>
 </div>

@@ -7,8 +7,13 @@
     </div>
     <div>
       <h1>Core Lessons</h1>
-      <span class="material-icons">
+    </div>
+    <div class="arrow">
+      <span *ngIf="!isLessonsExpanded" (click)="onLessonExpandClick()" class="material-icons">
         expand_more
+      </span>
+      <span *ngIf="isLessonsExpanded" class="material-icons" (click)="onLessonExpandClick()">
+        expand_less
       </span>
     </div>
   </div>
@@ -16,5 +21,31 @@
     <div class="grade">Grade</div>
     <div class="numberOfGrade">{{grade}}</div>
     <div class="triangle-up"></div>
+  </div>
+</div>
+<div fxLayout="column" class="expanded-lessons" [ngClass]="{'overlap' : isLessonsExpanded}" *ngIf="isLessonsExpanded">
+  <div fxLayoutAlign="space-between center" fxLayoutGap="40px" class="core-lessons">
+    <div>
+      <h2>Core Lessons</h2>
+      Mandatory MandatoryManda toryMandatoryMandatoryMand atoryMandator Mandatory
+    </div>
+    <div>
+      <h2 class="percent">{{coreLessons}}%</h2>
+      Complete
+    </div>
+  </div>
+  <div fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div>
+      <h2>
+        All Lessons
+      </h2>
+      Combi ation.......Combinat ion.......Combination.... ...Combination.......Co Combi ation.......Combinat
+      ion.......Combination.... ...Combination.......Co Combi ation.......Combinat ion.......Combination....
+      ...Combination.......Co Combi ation.......Combinat ion.......Combination.... ...Combination.......Co
+    </div>
+    <div>
+      <h2 class="percent">{{allLessons}}%</h2>
+      Complete
+    </div>
   </div>
 </div>

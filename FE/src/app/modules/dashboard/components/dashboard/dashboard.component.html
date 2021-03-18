@@ -1,11 +1,13 @@
-<p>Hey GGGGGGGGGGGGGGG</p>
 <div>
-  <div fxFlex fxLayoutGap="10px">
-    <app-lessons-container fxFlex></app-lessons-container>
-    <div fxFlex>
-      <app-quick-links-container></app-quick-links-container>
-      <app-assignments-container></app-assignments-container>
-      <app-resources-container></app-resources-container>
-    </div>
+  <p>Hey GGGGGGGGGGGGGGG</p>
+</div>
+<div fxLayout="row" fxLayoutGap="10px">
+  <div fxLayout="row" fxFlex="50">
+    <app-lessons-container></app-lessons-container>
+  </div>
+  <div fxLayout="column" fxFlex="50" fxLayoutGap="10px">
+    <app-quick-links-container></app-quick-links-container>
+    <app-assignments-container></app-assignments-container>
+    <app-resources-container></app-resources-container>
   </div>
 </div>

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { QuickLinksContainerComponent } from './components/quick-links-container/quick-links-container.component';
 
@@ -8,7 +9,8 @@ import { QuickLinksContainerComponent } from './components/quick-links-container
     QuickLinksContainerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ],
   exports: [
     QuickLinksContainerComponent

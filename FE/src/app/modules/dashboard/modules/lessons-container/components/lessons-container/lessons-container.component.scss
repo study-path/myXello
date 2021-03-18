@@ -5,7 +5,8 @@
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
   padding: $content-padding;
-
+  width: 100%;
+  box-sizing: border-box;
    
   .footer{
     border-top: $border-width solid $color-gainsboro;

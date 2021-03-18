@@ -8,10 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LessonsHeaderComponent implements OnInit {
   @Input() progress: number; 
   @Input() grade: number;
+  @Input() coreLessons: number;
+  @Input() allLessons: number;
+
+  isLessonsExpanded= false;
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onLessonExpandClick(){
+    this.isLessonsExpanded = !this.isLessonsExpanded;
   }
 
 }

@@ -1,50 +1,93 @@
 @import 'src/styles/colors';
+@import 'src/styles/constants';
 
-.uploader-progress{
-  display:flex;
-  position: relative;
-  ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
-    stroke: $color-spinner-yellow-green;
-  }
-}
-
-.progress{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15px; 
-  font-weight: bold;
-}
-
-.flag{
+:host {
+  width: 100%;
   display: flex;
-    flex-direction: column;   
-    align-items: center;
-    padding-top: 10px;
-    background-color: $color-flag-ce-soir;
-    width:65px;
-    height:75px;
-    margin-top: -11px;
-}
-.grade{
-    font-size: 16px;
-    color: white;    
-}
-.numberOfGrade{
-  color: white;   
-  font-weight: bold; 
-  font-size: 20px;
-}
+  flex-direction: column;
+  position: relative;
 
-.triangle-up {
-	width: 0;
-	height: 49px;
-	border-left: 32px solid transparent;
-	border-right: 32px solid transparent;
-	border-bottom: 26px solid white;
-}
-
-h1{
-  font-weight: bold;
+  .uploader-progress {
+    display:flex;
+    position: relative;
+    ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+      stroke: $color-spinner-yellow-green;
+    }
+  }
+  
+  .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px; 
+    font-weight: bold;
+  }
+  
+  .flag {
+    display: flex;
+      flex-direction: column;   
+      align-items: center;
+      padding-top: 10px;
+      background-color: $color-flag-ce-soir;
+      width:65px;
+      height:75px;
+      margin-top: -11px;
+  }
+  
+  .grade {
+      font-size: 16px;
+      color: white;    
+  }
+  
+  .numberOfGrade {
+    color: white;   
+    font-weight: bold; 
+    font-size: 20px;
+  }
+  
+  .triangle-up {
+    width: 0;
+    height: 49px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-bottom: 26px solid white;
+  }
+  
+  h1 {
+    font-weight: bold;
+  }
+  
+  .percent {
+    color:$color-spinner-yellow-green;
+   }
+  
+  .arrow {
+    width: 26px;
+    height: 26px;
+    background-color: $color-gainsboro;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    cursor: context-menu;
+  }
+  
+  .expanded-lessons {
+    border-bottom: $border-width solid $color-gainsboro;
+    border-radius: $border-radius;
+    padding: $content-padding;
+    margin-left: -$content-padding;
+    margin-right: -$content-padding;
+  }
+  
+  .overlap {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    top: 70px
+  }
+  
+  .core-lessons {
+    border-bottom: $border-width solid $color-gainsboro;
+    border-top: $border-width solid $color-gainsboro;
+  }
 }
