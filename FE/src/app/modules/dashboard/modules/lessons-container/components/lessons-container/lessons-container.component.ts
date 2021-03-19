@@ -11,52 +11,59 @@ export class LessonsContainerComponent implements OnInit {
   isAllLessonsClicked = false;
   lessons = [
     {
-      name:'lesson 1111111111111111 1111111111111111111111111 1111111111111111111 1111111111111111111111111111 11111111111111111111111111111111 1111111111111111111 1111111111111111',
+      id: 1,
+      name: 'lesson 1111111111111111 1111111111111111111111111 1111111111111111111 1111111111111111111111111111 11111111111111111111111111111111 1111111111111111111 1111111111111111',
       isLessonCompleted: true,
-      iconName:'/assets/img/univer.jpg',
-      isLessonCore:true
+      iconName: '/assets/img/univer.jpg',
+      isLessonCore: true
     },
     {
-      name:'lesson 2',
+      id: 2,
+      name: 'lesson 2',
       isLessonCompleted: false,
-      iconName:'/assets/img/bag.jpg',
-      isLessonCore:false
+      iconName: '/assets/img/bag.jpg',
+      isLessonCore: false
     },
     {
-      name:'lesson 3',
+      id: 3,
+      name: 'lesson 3',
       isLessonCompleted: true,
-      iconName:'/assets/img/fm.jpg',
-      isLessonCore:true
+      iconName: '/assets/img/fm.jpg',
+      isLessonCore: true
     },
-    {
-      name:'lesson 4',
+    { 
+      id: 4, 
+      name: 'lesson 4',
       isLessonCompleted: false,
-      iconName:'/assets/img/career.jpg',
-      isLessonCore:true
+      iconName: '/assets/img/career.jpg',
+      isLessonCore: true
     },
     {
-      name:'lesson 44',
+      id: 5,
+      name: 'lesson 5',
       isLessonCompleted: true,
-      iconName:'/assets/img/univer.jpg',
-      isLessonCore:true
+      iconName: '/assets/img/univer.jpg',
+      isLessonCore: true
     },
-    {
-      name:'lesson 5',
+    {id: 6,
+      name: 'lesson 6',
       isLessonCompleted: false,
-      iconName:'/assets/img/bag.jpg',
-      isLessonCore:false
+      iconName: '/assets/img/bag.jpg',
+      isLessonCore: false
     },
     {
-      name:'lesson 6',
+      id: 7,
+      name: 'lesson 7',
       isLessonCompleted: true,
-      iconName:'/assets/img/fm.jpg',
-      isLessonCore:false
+      iconName: '/assets/img/fm.jpg',
+      isLessonCore: false
     },
     {
-      name:'lesson 7',
+      id:8, 
+      name: 'lesson 7',
       isLessonCompleted: false,
-      iconName:'/assets/img/career.jpg',
-      isLessonCore:true
+      iconName: '/assets/img/career.jpg',
+      isLessonCore: true
     },
   ];
 

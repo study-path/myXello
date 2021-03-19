@@ -16,7 +16,9 @@
     display: flex;
     margin-left: -$content-padding;
     margin-right: -$content-padding;
-    margin-bottom: -$content-padding;
-    cursor: pointer;
+    margin-bottom: -$content-padding;    
+  }
+  a:link {
+    text-decoration: none;
   }
 }

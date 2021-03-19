@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { RouterModule } from '@angular/router';
 
 import { FeaturedLessonComponent } from './components/featured-lesson/featured-lesson.component';
 import { LessonItemComponent } from './components/lesson-item/lesson-item.component';
@@ -20,7 +21,8 @@ import { LessonsHeaderComponent } from './components/lessons-header/lessons-head
     CommonModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ],
   exports: [
     LessonsContainerComponent
