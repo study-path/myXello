@@ -14,4 +14,4 @@ import { AssignmentsContainerComponent } from './components/assignments-containe
     AssignmentsContainerComponent
   ]
 })
-export class AssigmentsContainerModule { }
+export class AssignmentsContainerModule { }
