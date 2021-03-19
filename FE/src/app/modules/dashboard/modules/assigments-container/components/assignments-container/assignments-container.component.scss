@@ -1,9 +1,39 @@
 @import 'src/styles/colors';
 @import 'src/styles/constants';
 
-:host{
-  display: flex;
+:host {
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
   padding: $content-padding;
+
+  .assignment {
+    border-bottom: $border-width solid $color-gainsboro;
+    margin-left: -$content-padding;
+    margin-right: -$content-padding;   
+  }
+
+  .interview {
+    color:$color-boston-blue;
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  .status {
+    font-size: 16px;
+    font-weight: bold;
+  }
+   
+  .footer {   
+    background-color: $color-white-smoke;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: -$content-padding;
+    margin-right: -$content-padding;
+    margin-bottom: -$content-padding;
+    cursor: pointer;
+  }
 }

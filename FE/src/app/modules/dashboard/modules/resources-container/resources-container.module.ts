@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ResourcesContainerComponent } from './components/resources-container/resources-container.component';
 
@@ -8,7 +9,8 @@ import { ResourcesContainerComponent } from './components/resources-container/re
     ResourcesContainerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ],
   exports: [
     ResourcesContainerComponent

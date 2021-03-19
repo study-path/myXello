@@ -37,11 +37,11 @@
   
   .grade {
       font-size: 16px;
-      color: white;    
+      color: $color-flag-white;    
   }
   
   .numberOfGrade {
-    color: white;   
+    color: $color-flag-white;   
     font-weight: bold; 
     font-size: 20px;
   }
@@ -51,7 +51,7 @@
     height: 49px;
     border-left: 32px solid transparent;
     border-right: 32px solid transparent;
-    border-bottom: 26px solid white;
+    border-bottom: 26px solid $color-flag-white;
   }
   
   h1 {
@@ -65,7 +65,7 @@
   .arrow {
     width: 26px;
     height: 26px;
-    background-color: $color-gainsboro;
+    background-color: $color-white-smoke;
     border-radius: 15px;
     margin-bottom: 16px;
     cursor: context-menu;
@@ -82,7 +82,7 @@
   .overlap {
     position: absolute;
     z-index: 5;
-    background-color: white;
+    background-color: $color-flag-white;
     top: 70px
   }
   

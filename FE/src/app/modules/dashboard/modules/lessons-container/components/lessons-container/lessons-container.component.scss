@@ -1,16 +1,15 @@
 @import 'src/styles/colors';
 @import 'src/styles/constants';
 
-:host{
+:host {
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
   padding: $content-padding;
   width: 100%;
   box-sizing: border-box;
    
-  .footer{
-    border-top: $border-width solid $color-gainsboro;
-    background-color: $color-gainsboro;
+  .footer {  
+    background-color: $color-white-smoke;
     height: 50px;
     align-items: center;
     justify-content: center;

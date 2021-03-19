@@ -1,9 +1,42 @@
 @import 'src/styles/colors';
 @import 'src/styles/constants';
 
-:host{
-  display: flex;
+:host { 
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
   padding: $content-padding;
+
+  .resource {
+    border-bottom: $border-width solid $color-gainsboro;
+    margin-left: -$content-padding;
+    margin-right: -$content-padding;    
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  .icons{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white-smoke;
+    border-radius: 5px;
+    margin-right: 20px;
+   
+  }
+  .resurce-name {
+    color:$color-boston-blue
+  }
+
+  .link{
+    padding: 10px;
+    border-bottom: $border-width solid $color-gainsboro;
+  }
+
+  .link1{
+    padding: $content-padding;
+  }
 }
