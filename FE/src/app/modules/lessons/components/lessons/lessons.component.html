@@ -1,1 +1,10 @@
-<p>{{lessonId}}</p>
+<H1>Let's emulate completing of the lesson by student</H1>
+<div *ngIf="lesson; else loading">
+  <p>Name of lesson: {{lesson.name}}</p>
+  <p>Is lesson completed? - {{lesson.isCompleted}}</p>
+  <p>Is core : {{lesson.isCore}}</p>
+
+  <button mat-raised-button (click)="completeLesson()" *ngIf="!lesson.isCompleted">Complete lesson</button>
+  <button mat-raised-button (click)="completeLesson()" *ngIf="lesson.isCompleted">Return to Dashboard</button>
+</div>
+<ng-template #loading>Loading lesson...</ng-template>

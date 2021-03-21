@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LessonModel } from '@models/lesson-model';
+import { LessonsService } from '@services/lessons.service';
 
 @Component({
   selector: 'app-lessons-container',
@@ -6,77 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lessons-container.component.scss']
 })
 export class LessonsContainerComponent implements OnInit {
-
-
   isAllLessonsClicked = false;
-  lessons = [
-    {
-      id: 1,
-      name: 'lesson 1111111111111111 1111111111111111111111111 1111111111111111111 1111111111111111111111111111 11111111111111111111111111111111 1111111111111111111 1111111111111111',
-      isLessonCompleted: true,
-      iconName: '/assets/img/univer.jpg',
-      isLessonCore: true
-    },
-    {
-      id: 2,
-      name: 'lesson 2',
-      isLessonCompleted: false,
-      iconName: '/assets/img/bag.jpg',
-      isLessonCore: false
-    },
-    {
-      id: 3,
-      name: 'lesson 3',
-      isLessonCompleted: true,
-      iconName: '/assets/img/fm.jpg',
-      isLessonCore: true
-    },
-    { 
-      id: 4, 
-      name: 'lesson 4',
-      isLessonCompleted: false,
-      iconName: '/assets/img/career.jpg',
-      isLessonCore: true
-    },
-    {
-      id: 5,
-      name: 'lesson 5',
-      isLessonCompleted: true,
-      iconName: '/assets/img/univer.jpg',
-      isLessonCore: true
-    },
-    {id: 6,
-      name: 'lesson 6',
-      isLessonCompleted: false,
-      iconName: '/assets/img/bag.jpg',
-      isLessonCore: false
-    },
-    {
-      id: 7,
-      name: 'lesson 7',
-      isLessonCompleted: true,
-      iconName: '/assets/img/fm.jpg',
-      isLessonCore: false
-    },
-    {
-      id:8, 
-      name: 'lesson 7',
-      isLessonCompleted: false,
-      iconName: '/assets/img/career.jpg',
-      isLessonCore: true
-    },
-  ];
+  lessons: LessonModel[] = [];
 
-  constructor() { }
+  constructor(private lessonsService: LessonsService) { }
 
   ngOnInit(): void {
+    this.lessonsService
+      .getAll$(1)
+      .subscribe(
+        lessons => this.lessons = lessons,
+        err => alert(err.message));
   }
 
   getLessons(){
     if(this.isAllLessonsClicked){
       return this.lessons;
     } else {
-      return this.lessons.filter(lesson => lesson.isLessonCore);  
+      return this.lessons.filter(lesson => lesson.isCore);  
     }     
   }
 

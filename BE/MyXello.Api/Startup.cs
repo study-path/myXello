@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MyXello.Api.Services;
 
 namespace MyXello.Api
 {
@@ -25,7 +26,19 @@ namespace MyXello.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy(
+                "AllowAny",
+                builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                }));
+
             services.AddControllers();
+
+            services.AddTransient<ILessonsService, LessonsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +48,8 @@ namespace MyXello.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("AllowAny");
 
             app.UseHttpsRedirection();
 

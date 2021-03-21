@@ -1,6 +1,6 @@
-﻿namespace MyXello.Api.Controllers.ViewModels
+﻿namespace MyXello.Api.Services.Models
 {
-    public class LessonViewModel
+    public class LessonModel
     {
         public int Id { get; set; }
 

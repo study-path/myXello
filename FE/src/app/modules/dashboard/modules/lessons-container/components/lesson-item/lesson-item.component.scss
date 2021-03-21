@@ -8,7 +8,12 @@
   margin: $margin; 
   cursor: pointer;
   display: flex;
+  height: 60px;
     
+  .lesson-name {
+    font-size: 20px;
+  }
+
   .uncomplited-lesson{
     color:$color-boston-blue;
     font-weight: bold;
@@ -20,7 +25,7 @@
   }
 
   .lesson-icon {
-    margin: 0 10px; 
+    margin: 0 30px; 
     width: 55px;
   }  
 }
