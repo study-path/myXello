@@ -1,6 +1,7 @@
 # myXello
 
 ## Purpose
+What can distinguish one candidate from another? Billion of aspects. Let my source code speak for me :)
 In the words of Xello team
 >I have a passion for coding beautiful, pixel-perfect CSS3/HTML5 layouts and intuitive interactions using hand-written Typescript, Angular, and other libraries and tools. I eager to master a solid understanding of how interactive experiences should look, feel, and function on a variety of devices. I try to think creatively, and can simplify 50 lines of code to 10. Continuous learning and growth are two of my core values, and I have an insatiable appetite for developing new skills. Above all, I hope that it will help me to fullfil Xello's mission of helping more than 5 million students plan their successful futures! :)
 
