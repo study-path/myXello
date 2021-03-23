@@ -75,10 +75,10 @@
   }
   
   .expanded-lessons {
+    width: 100%;
     border-bottom: $border-width solid $color-gainsboro;
     border-radius: $border-radius;
-    padding: $content-padding;
-    margin-left: -$content-padding;
+    padding: $content-padding;   
     margin-right: -$content-padding;
   }
   

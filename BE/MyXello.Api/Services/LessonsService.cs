@@ -12,7 +12,7 @@ namespace MyXello.Api.Services
             {
                 Id= 1,
                 Name = "Choosing a College",
-                IsCompleted = false,
+                IsCompleted = true,
                 IsCore = true,
                 IconName = "univer.jpg"
             },
@@ -56,7 +56,7 @@ namespace MyXello.Api.Services
                 Name = "Science",
                 IsCompleted = false,
                 IsCore = false,
-                IconName = "career.jpg"
+                IconName = "science.png"
             },
             new LessonModel
             {
@@ -73,7 +73,24 @@ namespace MyXello.Api.Services
                 Name = "English",
                 IsCompleted = false,
                 IsCore = false,
-                IconName = "career.jpg"
+                IconName = "english.png"
+            },
+            new LessonModel
+            {
+                Id= 9,
+                Name = "French",
+                IsCompleted = false,
+                IsCore = false,
+                IconName ="french.png"
+
+            },
+            new LessonModel
+            {
+                Id= 10,
+                Name = "Public Speaking",
+                IsCompleted = false,
+                IsCore = false,
+                IconName = "public_speaker.png"
             }
         };
 
