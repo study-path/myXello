@@ -32,4 +32,18 @@ export class LessonsContainerComponent implements OnInit {
   viewAllLessonsClick(){
     this.isAllLessonsClicked = true;
   }
+
+  getTotalProgress() {
+    return 100 / this.lessons.length * this.lessons.filter(l => l.isCompleted).length;
+  }
+
+  geCoreProgress() {
+    const coreLessons = this.lessons.filter(l => l.isCore);
+    if (coreLessons.length == 0)
+    {
+      return 0;
+    }
+    
+    return 100 / coreLessons.length * coreLessons.filter(l => l.isCompleted).length;
+  }
 }

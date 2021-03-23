@@ -4,7 +4,9 @@
 :host {
   border: $border-width solid $color-gainsboro;
   border-radius: $border-radius;
-  padding: $content-padding;
+  padding-right: $content-padding;
+  padding-left: $content-padding;
+  padding-top: $content-padding;
   width: 100%;
   box-sizing: border-box;
    
@@ -16,8 +18,10 @@
     display: flex;
     margin-left: -$content-padding;
     margin-right: -$content-padding;
-    margin-bottom: -$content-padding;    
+    margin-bottom: -$content-padding;  
+    cursor: pointer;  
   }
+
   a:link {
     text-decoration: none;
   }

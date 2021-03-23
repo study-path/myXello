@@ -1,4 +1,5 @@
-<app-lessons-header progress="40" grade="10" coreLessons="50" allLessons="20"></app-lessons-header>
+<app-lessons-header [progress]="geCoreProgress()" grade="10" [coreLessons]="geCoreProgress()"
+  [allLessons]="getTotalProgress()"></app-lessons-header>
 <app-featured-lesson></app-featured-lesson>
 <a *ngFor="let lesson of getLessons()" routerLink="/lessons/{{lesson.id}}" routerLinkActive="active">
   <app-lesson-item [lessonName]="lesson.name" [iconName]="lesson.iconName" [isLessonCompleted]="lesson.isCompleted">

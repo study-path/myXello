@@ -38,7 +38,7 @@ namespace MyXello.Api
 
             services.AddControllers();
 
-            services.AddTransient<ILessonsService, LessonsService>();
+            services.AddSingleton<ILessonsService, LessonsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

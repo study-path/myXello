@@ -60,6 +60,9 @@
   
   .percent {
     color:$color-spinner-yellow-green;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 35px;
    }
   
   .arrow {
@@ -88,6 +91,18 @@
   
   .core-lessons {
     border-bottom: $border-width solid $color-gainsboro;
-    border-top: $border-width solid $color-gainsboro;
+    border-top: $border-width solid $color-gainsboro;     
+    padding-bottom: 20px;   
+  }
+
+  .lessons{
+    border-top: $border-width solid $color-gainsboro;     
+    padding-bottom: 20px;   
+  }
+
+  .title{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
   }
 }

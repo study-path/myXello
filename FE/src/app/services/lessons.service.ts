@@ -20,4 +20,8 @@ export class LessonsService {
   getLesson$(userId, lessonId): Observable<LessonModel> {
     return this.http.get<LessonModel>(`${environment.xelloApiUrl}/api/users/${userId}/lessons/${lessonId}`);
   }
+
+  completeLesson$(userId, lessonId): Observable<LessonModel>{
+    return this.http.put<any>(`${environment.xelloApiUrl}/api/users/${userId}/lessons/${lessonId}/complete`, null);
+  }
 }

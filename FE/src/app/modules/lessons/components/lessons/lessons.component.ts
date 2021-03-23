@@ -28,8 +28,15 @@ export class LessonsComponent implements OnInit {
         err => alert(err.message));
   }
 
-  completeLesson(){
-    this.router.navigate(["/dashboard"]);
+  completeLesson() {
+    this.lessonsService
+      .completeLesson$(1, this.lessonId)
+      .subscribe(
+        () => this.redirectToDashBoard(),
+        err => alert(err.message));
   }
 
+  redirectToDashBoard() {
+    this.router.navigate(["/dashboard"])    
+  }
 }

@@ -5,6 +5,6 @@
   <p>Is core : {{lesson.isCore}}</p>
 
   <button mat-raised-button (click)="completeLesson()" *ngIf="!lesson.isCompleted">Complete lesson</button>
-  <button mat-raised-button (click)="completeLesson()" *ngIf="lesson.isCompleted">Return to Dashboard</button>
+  <button mat-raised-button (click)="redirectToDashBoard()" *ngIf="lesson.isCompleted">Return to Dashboard</button>
 </div>
 <ng-template #loading>Loading lesson...</ng-template>

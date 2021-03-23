@@ -59,7 +59,7 @@ namespace MyXello.Api.Controllers
         [Route("{lessonId}/complete")]
         public void CompleteLesson(int userId, int lessonId)
         {
-           
+            this.lessonsService.Complete(userId, lessonId);
         }
     }
 }

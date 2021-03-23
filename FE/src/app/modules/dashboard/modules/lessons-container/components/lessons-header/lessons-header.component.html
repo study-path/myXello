@@ -26,25 +26,25 @@
 <div fxLayout="column" class="expanded-lessons" [ngClass]="{'overlap' : isLessonsExpanded}" *ngIf="isLessonsExpanded">
   <div fxLayoutAlign="space-between center" fxLayoutGap="40px" class="core-lessons">
     <div>
-      <h2>Core Lessons</h2>
-      Mandatory MandatoryManda toryMandatoryMandatoryMand atoryMandator Mandatory
+      <div class="title">Core Lessons</div>
+      <div>Mandatory activities set by your school or district, that need to be complete by the end of your current
+        year.</div>
     </div>
     <div>
-      <h2 class="percent">{{coreLessons}}%</h2>
+      <div class="percent">{{coreLessons}}%</div>
       Complete
     </div>
   </div>
-  <div fxLayoutAlign="space-between center" fxLayoutGap="20px">
+  <div fxLayoutAlign="space-between center" fxLayoutGap="20px" class="lessons">
     <div>
-      <h2>
+      <div class="title">
         All Lessons
-      </h2>
-      Combi ation.......Combinat ion.......Combination.... ...Combination.......Co Combi ation.......Combinat
-      ion.......Combination.... ...Combination.......Co Combi ation.......Combinat ion.......Combination....
-      ...Combination.......Co Combi ation.......Combinat ion.......Combination.... ...Combination.......Co
+      </div>
+      Combination of mandatoryactivities plus another set of valuable lessons that will get you closer to be future
+      ready.
     </div>
     <div>
-      <h2 class="percent">{{allLessons}}%</h2>
+      <div class="percent">{{allLessons}}%</div>
       Complete
     </div>
   </div>
